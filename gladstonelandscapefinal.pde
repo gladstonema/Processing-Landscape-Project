@@ -1,5 +1,5 @@
 PImage img;
-PImage b;
+PImage b;        
 //broken shit
 //file = new SoundFile(this, "oof.mp3");
 
@@ -25,7 +25,7 @@ void draw () {
      background(0, 205, 242);
   }
   
-  stroke
+  //stroke (
     
     
     
@@ -39,6 +39,40 @@ void draw () {
   //brokencode
   //image(img,200,200,width/2,height/4);
   
+ 
+  
+  //oof time
+  //oof = loadSound("oof.mp3");
+  
+  //TIME FOR SUM STARS BOI
+  
+  if(mousePressed){
+    fill(YELLOW);
+    stroke(YELLOW);
+  }else{
+     background(BLUE);
+     stroke(BLUE);
+  }
+   
+   stroke(255,255,255);
+   fill(255, 255, 20);
+   ellipse(250,500,15,15);
+   ellipse(350,350,15,15);
+   ellipse(100,500,15,15);
+   ellipse(300,300,15,15);
+   ellipse(600,283,15,15);
+   ellipse(800,456,15,15);
+   ellipse(176,253,15,15);
+   ellipse(700,200,15,15);
+   ellipse(700,500,15,15);
+   ellipse(300,399,15,15);
+   ellipse(600,100,15,15);
+   ellipse(800,128,15,15);
+   ellipse(900,200,15,15);
+   ellipse(700,200,15,15);
+   ellipse(700,500,15,15);
+   ellipse(300,399,15,15);
+   
   //clouds
   stroke(255,255,255);
   fill(255,255,255);
@@ -49,22 +83,4 @@ void draw () {
   ellipse(775,175,150,150);
   ellipse(850,175,150,150);
   
-  //oof time
-  //oof = loadSound("oof.mp3");
-  
-}
-
-void mouseClicked(){
-  
-  
-
-
-
-
-
-
-
-
-
-
 }
