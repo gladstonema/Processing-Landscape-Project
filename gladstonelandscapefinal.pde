@@ -1,6 +1,10 @@
+//In the Beginning, Variables were declared.
+PFont f;
 PImage img;
-PImage b;        
-//broken shit
+PImage b;   
+
+
+//broken stuff pls ignore
 //file = new SoundFile(this, "oof.mp3");
 
 void setup() {
@@ -10,8 +14,7 @@ void setup() {
   //img = loadImage("eevee.png");
   /*ellipse(500,500,0,0);*/
   //img = loadImage("skyvapedeux.png");
-  
-  
+  f = createFont("Arial",16,true);
 
 }
 
@@ -44,18 +47,18 @@ void draw () {
   //oof time
   //oof = loadSound("oof.mp3");
   
-  //TIME FOR SUM STARS BOI
+  //TIME FOR SUM STARS BOI (but only at nite)
   
   if(mousePressed){
-    fill(YELLOW);
-    stroke(YELLOW);
+    fill(255,255,20);
+    stroke(255,255,20);
   }else{
-     background(BLUE);
-     stroke(BLUE);
+     fill(0, 205, 242);
+     stroke(0, 205, 242);
   }
-   
-   stroke(255,255,255);
-   fill(255, 255, 20);
+  //the following comments are so i can copy and paste colors instead of typing 
+  // stroke(255,255,255);
+  //fill(255, 255, 20);
    ellipse(250,500,15,15);
    ellipse(350,350,15,15);
    ellipse(100,500,15,15);
@@ -73,6 +76,25 @@ void draw () {
    ellipse(700,500,15,15);
    ellipse(300,399,15,15);
    
+   
+   
+  //making the sun go bye-bye at night
+  if(mousePressed){
+    fill(0);
+    stroke(0);
+  }else{
+     fill(255,255,20);
+     stroke(255,255,20);
+  }
+   
+  
+  
+  //big bright close star that make me warm
+  ellipse (50,50,400,400);
+  
+  
+  
+  
   //clouds
   stroke(255,255,255);
   fill(255,255,255);
@@ -82,5 +104,23 @@ void draw () {
   ellipse(700,175,150,150);
   ellipse(775,175,150,150);
   ellipse(850,175,150,150);
+  
+//HOTEL? TRIVAGO!
+  
+  if(mousePressed){
+    textFont(f,160);
+     fill(255,255,20);
+     stroke(255,255,20);
+     textMode(CENTER);
+     text("Trivago",mouseX,mouseY);
+  }else{
+    textFont(f,160);
+     fill(255,255,20);
+     stroke(255,255,20);
+     textMode(CENTER);
+     text("Hotel?",mouseX,mouseY);
+  }
+ 
+ 
   
 }
