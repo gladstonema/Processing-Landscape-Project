@@ -1,7 +1,8 @@
 //In the Beginning, Variables were declared.
 PFont f;
 PImage img;
-PImage b;   
+PImage b;
+PImage T;
 
 
 //broken stuff pls ignore
@@ -21,7 +22,7 @@ void setup() {
 
 void draw () {
  
-  //its nite time bois
+  //clicking makes it night
   if(mousePressed){
     background(5);
   }else{
@@ -39,15 +40,12 @@ void draw () {
   ellipse(300,1000,900,900);
   ellipse(700,1100,900,900);
   
-  //brokencode
+  //broken code for sound
   //image(img,200,200,width/2,height/4);
-  
- 
-  
   //oof time
   //oof = loadSound("oof.mp3");
   
-  //TIME FOR SUM STARS BOI (but only at nite)
+  //TIME FOR SOME STARS (but only at night)
   
   if(mousePressed){
     fill(255,255,20);
@@ -59,6 +57,7 @@ void draw () {
   //the following comments are so i can copy and paste colors instead of typing 
   // stroke(255,255,255);
   //fill(255, 255, 20);
+  
    ellipse(250,500,15,15);
    ellipse(350,350,15,15);
    ellipse(100,500,15,15);
@@ -89,7 +88,7 @@ void draw () {
    
   
   
-  //big bright close star that make me warm
+  //the sun
   ellipse (50,50,400,400);
   
   
@@ -105,21 +104,45 @@ void draw () {
   ellipse(775,175,150,150);
   ellipse(850,175,150,150);
   
-//HOTEL? TRIVAGO!
-  
-  if(mousePressed){
-    textFont(f,160);
-     fill(255,255,20);
-     stroke(255,255,20);
-     textMode(CENTER);
-     text("Trivago",mouseX,mouseY);
+//HOTEL? TRIVAGO! (my text)
+  //coloring the words when SPACE is pressed
+  if(keyPressed){
+    fill(244, 92, 65);
+    stroke(244, 92, 65);
   }else{
-    textFont(f,160);
-     fill(255,255,20);
-     stroke(255,255,20);
-     textMode(CENTER);
-     text("Hotel?",mouseX,mouseY);
+   fill(255,255,20);
+   stroke(255,255,20);
   }
+  
+  //the text itself
+  if(mousePressed){
+    textFont(f,100);
+    textMode(CENTER);
+    text("Trivago",mouseX,mouseY);
+  }else{
+    textFont(f,100);
+    textMode(CENTER);
+    text("Hotel?",mouseX,mouseY);
+  }
+  
+ //text "Hold space"
+ textFont(f,50);
+ textMode(CENTER);
+ if(keyPressed){
+   text("You're Holding Space!",500,960);
+ }else{
+   text("Hold SPACE",650,960);
+ }
+ 
+ //text "Left Click for night"
+  textFont(f,35);;
+ textMode(CENTER);
+ if(mousePressed){
+   text("Boy, am I tired!",50,960);
+ }else{
+   text("Hold Left Click for nighttime!",50,960);
+ }
+ 
  
  
   
